@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import Header from './Components/Header/Header'
+import Home from './Components/Home/Home'
+import Footer from './Components/Footer/Footer'
 
 
 
@@ -6,7 +9,9 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <h1 className='bg-green-400 text-center px-10 py-10'>Router-Crash Course</h1>
+   <>
+   
+   </>
   )
 }
 
