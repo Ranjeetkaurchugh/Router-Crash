@@ -2,10 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Layout from './Layout.jsx'
 import './index.css'
-import { RouterProvider } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './Components/Home/Home.jsx'
 import About from './Components/About/About.jsx'
-const router =([{
+import Contact from './Components/Contact-us/Contact.jsx'
+const router = createBrowserRouter([{
   path: '/',
   element: <Layout/>,
   children: [
@@ -17,6 +18,11 @@ const router =([{
    { path: "about",
     element: <About/>
   },
+  {
+    path: "contact",
+    element: <Contact/>
+
+  }
 
   ]
 
